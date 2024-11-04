@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="form_container">
+        <form method="post">
+            {% csrf_token %}
+            <h1>Edit Employee Data...</h1><br><hr><br>
+            <label>Enter your Name: </label>
+            <input type="text" name="name" value="{{singleemp.name}}" class="form-control form-control-sm"><br>
+            <label>Enter your Reg_no: </label>
+            <input type="number" name="regno" value="{{singleemp.regno}}" class="form-control form-control-sm"><br>
+            <label>Enter your Age: </label>
+            <input type="number" name="age" value="{{singleemp.age}}" class="form-control form-control-sm"><br>
+            <label>Enter your Year_of_join: </label>
+            <input type="number" name="yearofjoin" value="{{singleemp.yearofjoin}}"
+                class="form-control form-control-sm"><br>
+            <label>Enter your Mobile_no: </label>
+            <input type="number" name="mobileno" value="{{singleemp.mobile}}" class="form-control form-control-sm"><br>
+            <label>Enter your Add: </label>
+            <input type="text" name="place" value="{{singleemp.address}}" class="form-control form-control-sm"><br>
+            <input type="submit" value="Edit" class="btn btn-success">
+        </form>
+    </div>
+
+</body>
+
+</html>

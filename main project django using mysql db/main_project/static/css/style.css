@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(192, 192, 192);
+    /* background-image: url(/main_project/static/images/wal.jpg); */
+    /* background-size: cover; */
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content:end;
+}
+.navbar a{
+    font-size: 25px;
+}
+.navbar a:hover{
+    color: rgb(161, 87, 87);
+}
+
+
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color:  rgb(80, 120, 160);
+    letter-spacing: 4px;
+}
+
+
+
+.table_container{
+    padding: 30px 50px;
+}
+table{
+    box-shadow: 5px 5px 25px 10px rgb(107, 114, 155);
+    border-radius: 10px;
+}
+table th{
+    font-size: 18px;
+    text-align: center;
+    /* color: rgb(87, 79, 79); */
+}
+table td{
+    font-size: 17px;
+    text-align: center;
+    
+}
+table tr:hover{
+    color: rgb(132, 133, 199);    
+}
+#edit,#dlt{
+    font-size: 17px;
+    padding: 3px 5px;
+}
+
+
+
+
+.form_container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(179, 186, 193);
+    margin: 80px auto;
+    width: fit-content;
+    padding: 30px 50px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px 10px rgb(102, 91, 91);
+}
+form h1{
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+    color:  rgb(80, 120, 160);
+    letter-spacing: 3px;
+}
+form label{
+    font-size: 18px;
+    font-weight: 400;
+}
+.form-control{
+    border-radius: 10px;
+    padding: 3px 8px;
+    background-color: rgb(179, 186, 193);
+    font-size: 20px;
+}
+.btn{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
